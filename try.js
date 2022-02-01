@@ -1,4 +1,4 @@
 function message(msg)
 {
-    document.getElementById("message").innerHTML = msg+ " event!!";
+    document.getElementById('click').innerHTML = "Clicked "+msg+" button";
 }
