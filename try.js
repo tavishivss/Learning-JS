@@ -1,4 +1,4 @@
-function date()
+function message(msg)
 {
-    document.getElementById("date").innerHTML = "Its "+ Date() + " today!!";
+    document.getElementById("message").innerHTML = msg+ " event!!";
 }

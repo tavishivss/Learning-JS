@@ -1,5 +1,8 @@
-button{
-    background-color: aqua;
-    padding: 0.5em 0.5em 0.5em;
-    border: 2px solid green;
+body{
+    width: 50%;
+    height: 50%;
+    padding: 30px;
+    margin: 50px;
+    border: 1px solid;
+    text-align: center;
 }
