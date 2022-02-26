@@ -1,4 +1,4 @@
-var num=[10,20,30,40,50,60]
+var num=[10,20,30,40,50,60,70,80]
 
 function numb()
 {
@@ -15,4 +15,10 @@ function avg()
   avg=sum/num.length;
   document.getElementById('add').innerHTML=avg;
 
+  if(num.length==0)
+{
+  document.write("oops empty!!");
 }
+
+}
+
