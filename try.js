@@ -1,14 +1,18 @@
-var fruits=["apple","banana","papaya"]
-function loadfruits()
-{
-    document.getElementById('fruits').innerHTML=fruits;
+var num=[10,20,30,40,50,60]
 
+function numb()
+{
+  document.getElementById('add').innerHTML=num;
 }
 
-function addfruits()
+function avg()
 {
-  var fruit=prompt("enter fruit name: ");
-  fruits.push(fruit);
-  document.getElementById('fruits').innerHTML=fruits;
-  
+  sum=0;
+  for(i=0; i<num.length; i++)
+  {
+    sum=sum+num[i];
+  }
+  avg=sum/num.length;
+  document.getElementById('add').innerHTML=avg;
+
 }
