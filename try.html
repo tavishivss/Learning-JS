@@ -8,10 +8,54 @@
 	<script src = "try.js"></script>
 	<title>Document</title>
 </head>
-<body onload="numb()">
-	
-	<button onclick="avg()">Click here!!</button>
-	<p id="add"></p>
+<body>
+	<form>
+		<label for='name'>Name</label>
+		<input type="text" id="name" ><br>
+		<label for='email'>Email ID</label>
+		<input type="email" id="email" placeholder="vts@gmail.com"><br>
+		<label for='DOB'>Birth Date</label>
+		<input type="date" id="date"><br>
+		<input type="submit" value="Submit">
+	</form><br>
+
+	<form>
+		Radio Buttons<br>
+		<label><input type="radio">Male<br>
+		<input type="radio">Female<br></label>
+	</form><br>
+
+	<form>
+		Check Box<br>
+       <label>
+		   <input type="checkbox">1<br>
+		   <input type="checkbox">2<br>
+		   <input type="checkbox">3<br>
+	   </label>
+
+	   <label>Number: 
+		<input type="number" name="numberInput" min="1" max="5">
+	   </label><br>
+	   <label>Range: 
+		   <input type="range" name="rangeInput" min="1" max="10">
+		</label><br>
+
+         <label>Color: 
+			 <input type="color" name="colorInput" min="1" max="10">
+			</label><br>
+
+         <label>Date: 
+			 <input type="date" name="dateInput">
+			</label><br>
+
+         <label>URL: 
+			 <input type="url" name="urlInput">
+			</label><br>
+
+    		<input type = 'submit' value = "Click Here">
+	</form>
+
+
 </body>
 </html>
 
