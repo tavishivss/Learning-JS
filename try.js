@@ -1,4 +1,4 @@
-var num=[]
+var num=[10,20,60]
 
 function numb()
 {
@@ -7,20 +7,19 @@ function numb()
 
 function avg()
 {
-  if(num.length==0)
-  {
-    document.write("oops empty!!");
-  }
-  else 
-  {
-    sum=0;
-    for(i=0; i<num.length; i++)
-    {
-      sum=sum+num[i];
+  var sum=0,count=0;
+  if (num.length > 0){
+    for (index = 0; index < num.length; index++){
+      if (num[index] != undefined){
+        sum += num[index]; 
+        count = count + 1;
+      }
     }
-    avg=sum/num.length;
-    document.getElementById('add').innerHTML=avg;
+    document.write(sum/count);
   }
+  else
+    document.write("Empty Array");
+  
 
 }
 
