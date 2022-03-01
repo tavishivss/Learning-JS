@@ -1,4 +1,19 @@
+<<<<<<< HEAD
 #nn{
     margin-left: 10px;
     display:none;
+=======
+input{
+    border:1px solid black;
+}
+
+input:focus{
+    background-color: #E6E6E6;
+}
+
+#nick{
+    margin-left: 4%;
+    display:none;
+    width: 50%;
+>>>>>>> f7c68b17ae1e5cc0fa3b9d6e16a29033aee54d12
 }
