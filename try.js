@@ -1,13 +1,10 @@
-function check()
-{
-  var em1=document.getElementById('email');
-  var em2=document.getElementById('confemail')
-  if(em1.value==em2.value)
-  {
-    alert("you go gal!!")
+function nicknameFunction(){
+  if (yesNick.checked){
+nick.style.display="inline";
+nickname.setAttribute('required',true);
   }
-  else
-  {
-    alert("oopsiee!!")
+  else{ 
+      nickname.removeAttribute('required');
+      nick.style.display="none";
   }
 }

@@ -3,18 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="try.js"></script>
 	<link rel="stylesheet" href="try.css">
 	<title>Document</title>
-
 </head>
+
 <body>
-	<form>
-		<label for="email">Email</label>
-		<input type="email" name="email" id="email"><br>
-		<label for="email">Confirm Email</label>
-		<input type="email" name="confemail" id="confemail"><br>
-        <input type="submit" onclick="check()" value="Confirm?">
-	</form>
+	<form action="http://www.intro-webdesign.com" method = "GET">
+		<fieldset>
+			  <legend>Form Verification</legend>
+  <label for ="fName">First Name:</label>
+			  <input type = "text" name = "fName" id = "fName" required><br/>
+  			<label for = "lName">Last Name:</label>
+			  <input type = "text" name = "lName" id = "lName" required><br/>
+			  <label for = "yesNick">Nickname?:</label>
+			  <input id="yesNick" name="yesNick" type="checkbox" value="yes" onchange= "nicknameFunction()"/>	<br/>
+			    
+  <div id = "nick">
+				    <label for = "nickname">Nickname:</label>
+				    <input type = "text" name = "nickname" id = "nickname"><br/>
+			  </div>
+  <input type = "submit" value = "Verify"/>
+ </fieldset>
+</form>
 </body>
 </html>
