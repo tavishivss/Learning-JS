@@ -1,26 +1,18 @@
-<<<<<<< HEAD
-function nic(){
-  if(nickname.checked)
-  {
-      nn.style.display="inline";
-      nyc.setAttribute('required',true);
-  }
-  else
-  {
-      nyc.removeAttribute('required');
-      nn.style.display="none";
-      
-  }
+function billingFunction()
+{
+ var same = document.getElementById('same');
+ var ship_name = document.getElementById('shippingName');
+ var ship_zip = document.getElementById('shippingZip');
+ var bill_name = document.getElementById('billingName');
+ var bill_zip = document.getElementById('billingZip');
+ if(same.checked)
+ {
+ bill_name.setAttribute('value',ship_name.value);
+ bill_zip.setAttribute('value',ship_zip.value);
+ }
+ else
+ {
+ bill_name.removeAttribute('value');
+ bill_zip.removeAttribute('value');
+ }
 }
-=======
-function nicknameFunction(){
-  if (yesNick.checked){
-nick.style.display="inline";
-nickname.setAttribute('required',true);
-  }
-  else{ 
-      nickname.removeAttribute('required');
-      nick.style.display="none";
-  }
-}
->>>>>>> f7c68b17ae1e5cc0fa3b9d6e16a29033aee54d12
