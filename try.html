@@ -4,59 +4,29 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="try.js"></script>
 	<link rel="stylesheet" href="try.css">
-	<script src = "try.js"></script>
 	<title>Document</title>
 </head>
+
 <body>
-	<form>
-		<label for='name'>Name</label>
-		<input type="text" id="name" ><br>
-		<label for='email'>Email ID</label>
-		<input type="email" id="email" placeholder="vts@gmail.com"><br>
-		<label for='DOB'>Birth Date</label>
-		<input type="date" id="date"><br>
-		<input type="submit" value="Submit">
-	</form><br>
-
-	<form>
-		Radio Buttons<br>
-		<label><input type="radio">Male<br>
-		<input type="radio">Female<br></label>
-	</form><br>
-
-	<form>
-		Check Box<br>
-       <label>
-		   <input type="checkbox">1<br>
-		   <input type="checkbox">2<br>
-		   <input type="checkbox">3<br>
-	   </label>
-
-	   <label>Number: 
-		<input type="number" name="numberInput" min="1" max="5">
-	   </label><br>
-	   <label>Range: 
-		   <input type="range" name="rangeInput" min="1" max="10">
-		</label><br>
-
-         <label>Color: 
-			 <input type="color" name="colorInput" min="1" max="10">
-			</label><br>
-
-         <label>Date: 
-			 <input type="date" name="dateInput">
-			</label><br>
-
-         <label>URL: 
-			 <input type="url" name="urlInput">
-			</label><br>
-
-    		<input type = 'submit' value = "Click Here">
-	</form>
-
-
+<form>
+	<fieldset>
+		<legend>Verification</legend>
+		<label>First Name</label>
+		<input type="text" required name="name" id="fname" required><br>
+		<label>Last Name</label>
+		<input type="text" name="lastname" id="lname"><br>
+		<label>Nickname?:</label>
+		<input type="checkbox" value="yes" name="nickname" id="nickname" onchange="nic()">
+		<br><div id="nn">
+			<label>Nickname</label>
+			<input type="text" name="nyc" id="nyc">
+		</div><br>
+		<label>
+			<input type="submit" name="verify" value="Verify">
+		</label>
+	</fieldset>
+</form>
 </body>
 </html>
-
-
